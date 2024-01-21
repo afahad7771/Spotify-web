@@ -1,0 +1,653 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#nav {
+  height: 90%;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#nav > article {
+  height: 80px;
+  width: 80%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#nav > article > .logo {
+  height: 70px;
+  width: 80%;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: end;
+  /* justify-content:baseline; */
+}
+
+#nav > article > .logo > svg {
+  height: 50px;
+  width: 20%;
+  margin-left: 30px;
+  fill: rgb(255, 255, 255);
+}
+
+#nav > article > .menu {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgb(255, 152, 16); */
+}
+
+#nav > article > .menu > ol {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  /* justify-content:right; */
+  /* justify-content: center; */
+
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+#nav > article > .menu > ol > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#nav > article > .menu > ol > li > .x:hover {
+  color: rgb(48, 214, 48);
+}
+
+#nav > article > .menu > ol > li > .z {
+  color: gainsboro;
+}
+
+#back {
+  height: 84vh;
+  width: 100%;
+  background: url(https://www.scdn.co/i/free/bubbles-dktp.svg) center -138px / 100%
+      1068px no-repeat,
+    linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#back > article {
+  height: 95%;
+  width: 60%;
+  /* background-color: rgb(51, 125, 190); */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#back > article > .mobile {
+  height: 90%;
+  width: 48%;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  background-color: white;
+  /* background-color: bisque; */
+}
+#back > article > .mobile > .punch {
+  height: 7px;
+  width: 50px;
+  /* padding-left: 50px; */
+  margin-left: 45%;
+  margin-top: 30px;
+  border-radius: 25px;
+  background-color: black;
+}
+#back > article > .mobile > .img {
+  height: 87%;
+  width: 95%;
+  margin-left: 8px;
+  margin-top: 30px;
+  /* background-color: brown; */
+  background-image: url(./assets/spotify.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+#back > article > .content {
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  padding-top: 120px;
+  /* margin-right: 5px; */
+  /* padding-left: 10px; */
+  /* background-color: blue; */
+}
+#back > article > .content > h1 {
+  font-size: 55px;
+  letter-spacing: -2.56px;
+  max-width: 653px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: 600; */
+  line-height: 1.15;
+  /* padding-bottom: 32px; */
+  padding-top: 10px;
+  color: white;
+  /* text-align: center; */
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 25px;
+}
+#back > article > .content > button {
+  height: 45px;
+  width: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 30px;
+  /* padding-left: 20px; */
+  margin-left: 60px;
+}
+#back > article > .content > button:hover {
+  transform: scale(1.05);
+  transition: 3ms;
+}
+
+.bside > article {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bside > article > #a > p {
+  height: 70px;
+  width: 100%;
+  /* background-color: aquamarine; */
+  font-size: xx-large;
+  font-weight: 1000;
+  /* line-height: 1.50; */
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 60px;
+
+  /* background-color: black; */
+  /* color: aliceblue; */
+}
+
+.logo > article {
+  height: 25vh;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo > article > .ab {
+  height: 150px;
+  width: 150px;
+  /* background-color: rgb(5, 138, 255); */
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+  /* box-shadow:2px white; */
+  border-radius: 50%;
+}
+.logo > article > .a1 {
+  background-image: url(./assets/mediaspot.png);
+  background-position: center;
+  background-size: cover;
+}
+.logo > article > .a2 {
+  background-image: url(./assets/playlistspot.png);
+  background-position: center;
+  background-size: cover;
+}
+.logo > article > .a3 {
+  background-image: url(./assets/heartspot.png);
+  background-position: center;
+  background-size: cover;
+}
+.logo > article > .a4 {
+  background-image: url(./assets/thudspot.png);
+  background-position: center;
+  background-size: cover;
+}
+.txt > article {
+  height: 20vh;
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: rgb(2, 255, 255); */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.txt > article > .hp {
+  height: 40%;
+  width: 100%;
+  /* background-color: blue; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+.txt > article > .hp1 > h1 {
+  margin-left: 150px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.3em;
+  padding: 0px;
+}
+.txt > article > .hp2 > h1 {
+  margin-left: 130px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.3em;
+  padding: 0px;
+}
+.txt > article > .hp3 > h1 {
+  margin-left: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.3em;
+  padding: 0px;
+}
+.txt > article > .hp4 > h1 {
+  margin-left: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 1.3em;
+  padding: 0px;
+}
+.txt > article > .hp1 > p {
+  margin-left: 130px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.txt > article > .hp2 > p {
+  margin-left: 110px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.txt > article > .hp3 > p {
+  margin-left: 68px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.txt > article > .hp4 > p {
+  margin-left: 25px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+#card > article {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+}
+#card > article > p {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  padding: 70px 15px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.qus > article {
+  height: 15vh;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qus > article > h1 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  letter-spacing: -0.02em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#how > article {
+  height: 9vh;
+  width: 80%;
+  margin-left: 160px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: baseline;
+  padding-top: 40px;
+}
+#how > article:hover {
+  cursor: pointer;
+}
+#how > article > button {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+}
+#how > article > button:hover {
+  cursor: pointer;
+}
+
+#abc > article {
+  height: 9vh;
+  width: 80%;
+  /* background-color: blue; */
+  margin-left: 160px;
+  display: flex;
+  align-items: baseline;
+  padding-top: 40px;
+}
+#abc > article:hover {
+  cursor: pointer;
+}
+#abc > article > button {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+}
+
+#abc > article > button:hover {
+  cursor: pointer;
+}
+
+#def > article {
+  height: 9vh;
+  width: 80%;
+  /* background-color: blue; */
+  margin-left: 160px;
+  display: flex;
+  align-items: baseline;
+  padding-top: 40px;
+}
+#def > article:hover {
+  cursor: pointer;
+}
+
+#def > article > button {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+}
+#def > article > button:hover {
+  cursor: pointer;
+}
+
+#ghi > article {
+  height: 9vh;
+  width: 80%;
+  /* background-color: blue; */
+  margin-left: 160px;
+  display: flex;
+  align-items: baseline;
+  padding-top: 40px;
+}
+#ghi > article:hover {
+  cursor: pointer;
+}
+
+#ghi > article > button {
+  font-size: 18px;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+}
+#ghi > article > button:hover {
+  cursor: pointer;
+}
+
+#play > article {
+  height: 65vh;
+  width: 100%;
+  background: url(https://www.scdn.co/i/free/lets-play.svg) center center / 100%
+      no-repeat,
+    linear-gradient(-155deg, rgb(108, 14, 224) 55%, rgb(240, 55, 166) 115%)
+      rgb(108, 14, 224);
+  /* background-color: blue; */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 25px; */
+  /* justify-content: center; */
+}
+#play > article > h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  padding: 110px 15px 32px;
+}
+#play .but {
+  height: 40px;
+  width: 140px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: 600; */
+  margin-top: 20px;
+}
+#play button {
+  cursor: pointer;
+  height: 50px;
+  width: 140px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: none;
+}
+
+.sec8 {
+  height: 75vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec8 > footer {
+  height: 80%;
+  width: 90%;
+}
+.sec8 > footer > .divvv {
+  height: 75%;
+  width: 100%;
+}
+.sec8 > footer > .div1 {
+  height: 63%;
+  width: 100%;
+}
+.sec8 > footer > .div1 > .logo {
+  height: 100%;
+  width: 15%;
+
+  fill: white;
+}
+
+.sec8 > footer > div {
+  height: 100%;
+  width: 100%;
+}
+
+.sec8 > footer > div > .af {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+.sec8 > footer > div > .af > .div1 {
+  height: 99%;
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  fill: white;
+}
+
+.sec8 > footer > .af > div > .div1 > div {
+  height: 100%;
+  width: 80%;
+}
+
+.sec8 > footer > div > .af > .div1 > div > svg {
+  width: 75%;
+  margin-top: 12px;
+  margin-left: 35px;
+}
+.sec8 > footer > div > .af > .div1 > div > svg:hover {
+  cursor: pointer;
+}
+.sec8 > footer > div > .af > .div2 {
+  height: 99%;
+  width: 17%;
+  display: flex;
+  justify-content: center;
+}
+
+.sec8 > footer > div > .af > .div2 > div {
+  height: 100%;
+  width: 85%;
+}
+.sec8 > footer > div > .af > .div2 > div > ol {
+  list-style: none;
+  padding-top: 30px;
+}
+.sec8 > footer > div > .af > .div2 > div > ol > li {
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.b {
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(122, 122, 135);
+}
+
+.sec8 > footer > div > .af > .div2 > div > ol > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec8 > footer > div > .af > .div2 > div > ol > li > a:hover {
+  color: rgb(30, 215, 96);
+}
+.sec8 > footer > div > .af > .div3 {
+  height: 99%;
+  width: 17%;
+  margin-left: 50px;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+.sec8 > footer > div > .af > .div3 > div > ol > li {
+  list-style-type: none;
+  margin-left: 50px;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec8 > footer > div > .af > .div3 > div > ol > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec8 > footer > div > .af > .div4 {
+  height: 99%;
+  width: 16%;
+  margin-left: 50px;
+  margin-top: 28px;
+  /* list-style-type: none; */
+  display: flex;
+  justify-content: center;
+}
+.sec8 > footer > div > .af > .div4 > div > ol > li {
+  margin-top: 18px;
+  list-style-type: none;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec8 > footer > div > .af > .div4 > div > ol > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec8 > footer > div > .af > .div5 {
+  height: 99%;
+  width: 40%;
+  font-size: 50px;
+  display: flex;
+  margin-top: 20px;
+  /* align-items: end; */
+  justify-content: center;
+  /* color:white; */
+}
+/* .sec8>footer>div>.af>.div5:hover{
+    cursor: pointer;
+} */
+.sec8 > footer > div > .af > .div5 > a > .fa-instagram {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .sec8>footer>div>.af>.div5>a>i:hover{
+    cursor: pointer;
+    color:  rgb(30,215,96) ;
+} */
+
+.sec8 > footer > #ind > div {
+  height: 40px;
+  width: 100%;
+  /* background-color: aliceblue; */
+}
+.sec8 > footer > #ind > div > .art {
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+.sec8 > footer > .art1 > div > ol {
+  height: 25px;
+  width: 50%;
+  margin-left: 80px;
+  margin-top: 50px;
+  /* padding-left: 30px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+  display: flex;
+  color: rgb(87, 85, 85);
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: aquamarine; */
+}
+.sec8 > footer > .art1 > div > ol > li {
+  /* padding-left: 30px; */
+  /* margin-left: 30px; */
+  list-style: none;
+  /* list-style-type: none; */
+}
+.sec8 > footer > .art1 > div > ol > li > a {
+  color: rgb(125, 121, 121);
+  list-style-type: none;
+  text-decoration: none;
+}
+.sec8 > footer > #ind > div > .art > a > svg {
+  color: white;
+}
